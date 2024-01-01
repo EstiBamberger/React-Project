@@ -1,0 +1,14 @@
+/* @media screen and (max-width: 1180px) {
+    .root {
+      width: 200;
+    }
+
+  }
+  @media screen and (max-width: 750px) {
+    .card {
+      width: calc(100% - 4px);
+    }
+    .bussinesData{
+      display: none;
+    }
+  } */
