@@ -11,8 +11,6 @@ import Typography from '@mui/material/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
-import ServicesStore from '../../store/ServicesStore';
-
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
 function getStepContent(step,handleChangeOrder) {

@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { useEffect } from 'react';
-import ServicesStore from '../../store/ServicesStore';
 
 
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];

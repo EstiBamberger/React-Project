@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Button from '@material-ui/core/Button';
-import MeetingsTable from '../tables/MeetingsTable'
 import { observer } from "mobx-react"
 import { Outlet, Link } from "react-router-dom"
 import './AdminHomePage.css'
@@ -60,21 +59,20 @@ const AdminHomePage = (observer(()=> {
       }</div>
       <div className="e">
       <FormControlLabel
-        control={<Switch checked={checked} onChange={handleChange} />}
+        control={<Switch checked={checked} onChange={handleChange}/>}
         label="edit"
         className={classes.edit}
-        style={{color:checked?'#00bfa5':'',}}
       />
     </div>
     <div className={classes.buttons}>
     <Link to="./meetings" >  
-    <Button variant="outlined" color="primary" >
+    <Button variant="outlined" color="primary" style={{borderColor:'#00bfa5',color:'#212121',}}>
       יומן פגישות
     </Button></Link>
     
     <div style={{ margin: '15px' }}></div>
     <Link to="./ser" >
-    <Button variant="outlined" color="secondary" >
+    <Button variant="outlined" color="secondary" style={{borderColor:'#00bfa5',color:'#212121',}}>
       רשימת שירותים
     </Button></Link>
     </div>

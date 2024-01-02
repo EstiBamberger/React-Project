@@ -35,24 +35,14 @@ const StyledFab = styled(Fab)({
 
 const SerList = observer(() => {
   const classes = useStyles();
-useEffect(() => {
-   ServicesStore.initialServices();
-  }, []);
-
   return (
     <React.Fragment >
       <CssBaseline />
       <Paper square sx={{ pb: '50px' ,overflow:'auto'}} className={classes.all}>
-        {/* <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          שירותים
-        </Typography> */}
         <List sx={{ mb: 2 }}>
           {ServicesStore.services.map((item) => (
             <React.Fragment >
               <ListItem button >
-                {/* <ListItemAvatar>
-                  <Avatar alt="Profile Picture" src={person} />
-                </ListItemAvatar> */}
                 <ListItemText>{item.name}</ListItemText>
                 <ListItemText>{item.price}</ListItemText>
                 <ListItemText>{item.describtion}</ListItemText>

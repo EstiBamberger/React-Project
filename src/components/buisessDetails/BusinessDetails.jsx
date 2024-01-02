@@ -13,7 +13,6 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import DetailsIcon from '@mui/icons-material/Details';
 import ServicesStore from '../../store/ServicesStore';
 import { observer } from 'mobx-react';
-import './BusinessDetails.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {

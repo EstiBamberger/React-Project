@@ -8,8 +8,7 @@ import AddMeeting from '../addMeeting/AddMeeting'
 import ServicesStore from '../../store/ServicesStore';
 import { observer } from 'mobx-react';
 import { makeStyles } from '@material-ui/core/styles';
-import { teal, amber, grey, red } from '@mui/material/colors';
-import { SpeedDial } from 'primereact/speeddial';
+
 
 const useStyles = makeStyles((theme) => ({
 paper:{
@@ -37,9 +36,6 @@ const ServicesClient = observer(() => {
 }, setOrderData] = React.useState({});
     const [open, setOpen] = React.useState(false);
     const [selectedValue, setSelectedValue] = useState(emails[1]);
-    // useEffect(() => {
-    //   ServicesStore.initialServices();
-    //  }, []);
 
      SimpleDialog.propTypes = {
       onClose: PropTypes.func.isRequired,

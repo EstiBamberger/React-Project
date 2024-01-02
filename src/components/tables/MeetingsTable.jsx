@@ -11,8 +11,6 @@ import PhonelinkOffIcon from '@mui/icons-material/PhonelinkOff';
 import { useState, useEffect } from 'react';
 import { observer } from 'mobx-react';
 import ServicesStore from '../../store/ServicesStore';
-import { grey, red } from '@material-ui/core/colors';
-import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 
 const columns = [  { id: 'type', label: <strong>סוג שירות:</strong>, minWidth: 130, format: (value) => value.toLocaleString('en-US'), align: 'right', },
   {
@@ -54,20 +52,10 @@ const MeetingsTable = observer(({ i }) => {
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
   const [orders, setOrdersList] = useState([]);
 
-
-
-
   useEffect(() => {
     ServicesStore.getOrders();
     console.log(ServicesStore.orders.length)
   }, [])
-
-  // const isWithinComingWeek = (date) => {
-  //   const currentDate = new Date();
-  //   const rowDate = new Date(date);
-  //   return rowDate.getMonth() === currentDate.getMonth()&&
-  //   Math.abs(currentDate.getDate()-rowDate.getDate())<=7;
-  // };
   function isInComingWeek(date) {
     const currentDate = new Date();
     const nextWeek = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000); 
