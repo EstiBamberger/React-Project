@@ -27,7 +27,7 @@ After downloading the project, follow these steps:
    npm run dev
    ```
 
-### Try and enjoy!!
+###Don't forget to run the server. Try and enjoy!!
 
 
 
