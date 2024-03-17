@@ -21,3 +21,20 @@ Welcome to the Meeting Management System project! This system is designed to fac
 To run the Meeting Management System locally, follow these steps:
 
 1. Clone the repository:
+git clone https://github.com/your-username/meeting-management-system.git
+
+2. Install dependencies:
+cd meeting-management-system
+npm install
+
+
+
+
+
+
+
+
+
+
+
+
